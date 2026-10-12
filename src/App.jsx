@@ -7,7 +7,6 @@ function App() {
     <>
       <Counter />
       <Input />
-      <h1 onToggle={}></h1>
     </>
   );
 }
