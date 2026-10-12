@@ -1,20 +1,13 @@
 import "./App.css";
-import { useState } from "react";
+import Counter from "./components/Counter";
+import Input from "./components/Input";
 
 function App() {
-  const [count, setCount] = useState(0);
-  // const [isAdmin, setIsAdmin] = useState(false);
-
-  const increase = () => {
-    setCount((prevCount) => prevCount + 1);
-    console.log(count);
-  };
-
   return (
     <>
-      <h1 onClick={() => setCount((prev) => prev - 1)}>count: {count}</h1>
-      <input type="text" />
-      <button onClick={increase}>increase</button>
+      <Counter />
+      <Input />
+      <h1 onToggle={}></h1>
     </>
   );
 }
